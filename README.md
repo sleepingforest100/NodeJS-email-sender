@@ -1,6 +1,6 @@
 # Email Sender Application
 
-This is a simple email sender application built with Node.js and Nodemailer. It allows you to send emails using Gmail's SMTP server.
+This is an email sender application built with Node.js and Nodemailer. It allows you to send emails using Gmail's SMTP server.
 
 ## Prerequisites
 
