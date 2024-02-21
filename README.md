@@ -21,5 +21,5 @@ npm install dotenv nodemailer
 
 ## Usage
 
-The application sends an email to a specified recipient using Gmail's SMTP server. You can modify the recipient's email address, subject, and message content directly in the `app.js` file.
+The application sends an email to a specified recipient using Gmail's SMTP server. You can modify the recipient's email address, subject, message content and files directly in the `app.js` file.
 
