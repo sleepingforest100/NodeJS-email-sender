@@ -12,8 +12,8 @@ async function notifyAdmin() {
         port: 465,
         secure: true,
         auth: {
-          user: "mmedikoshh@gmail.com",
-          pass: "rbnmglhrqmfccmfa",
+          user: userGmail,
+          pass: appPassword,
         },
     });
 
@@ -24,14 +24,14 @@ async function notifyAdmin() {
     `;
 
     const info = await transporter.sendMail({
-        from: "mmedikoshh@gmail.com",
-        to: "220576@astanait.edu.kz",
+        from: from,
+        to: to,
         subject: "Successful sending of a new message",
         html: htmlTemplate,
         attachments: [
             {
                 filename: 'file.txt',
-                content: fs.createReadStream('D:/Programs/VSCode Projects/email_sender/file.txt'), // Path to your file
+                content: fs.createReadStream('paths'), // Path to your file
             }
         ]
     });
